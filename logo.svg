@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect x="12" y="12" width="488" height="488" rx="112" fill="#fff" stroke="#18a84b" stroke-width="18"/>
+<path d="M86 164 256 84l170 80-170 82Z" fill="#102b55"/>
+<path d="M134 184v57c76 48 168 48 244 0v-57l-122 59Z" fill="#102b55"/>
+<path d="M146 309c38-52 77-59 110-13 33-46 72-39 110 13-41-25-75-23-110 11-35-34-69-36-110-11Z" fill="#087f3d"/>
+<path d="M158 337c35-23 66-21 98 8 32-29 63-31 98-8" fill="none" stroke="#102b55" stroke-width="13" stroke-linecap="round"/>
+<path d="M147 180v57" stroke="#f4b400" stroke-width="9" stroke-linecap="round"/>
+<path d="M147 228c-17 11-16 25 0 33 16-8 17-22 0-33Z" fill="#f4b400"/>
+<path d="M342 151c35 8 52 32 50 63" fill="none" stroke="#f4b400" stroke-width="17" stroke-linecap="round"/>
+<path d="m374 205 19 17 16-21" fill="none" stroke="#f4b400" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="256" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="94" font-weight="800" fill="#087f3d">CSH</text>
+</svg>
