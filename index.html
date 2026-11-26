@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#087f73">
+<title>Career & Skill Hub</title>
+<link rel="manifest" href="manifest.json">
+<style>
+:root{--green:#087f73;--deep:#05665e;--mint:#e8f7f4;--ink:#173b38;--muted:#6d8582;--line:#e3ecea;--bg:#f5f8f8;--white:#fff;--shadow:0 8px 24px #123b3510}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer}
+.top{background:var(--green);color:white;padding:18px max(18px,calc((100vw - 1050px)/2));padding-bottom:14px;position:sticky;top:0;z-index:5;box-shadow:0 4px 16px #003d3822}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:16px;background:#ffffff24;display:grid;place-items:center;font-size:25px}
+.brand h1{font-size:20px;margin:0;font-weight:750}.brand p{margin:2px 0 0;font-size:12px;color:#d5f3ef}
+.top-actions{margin-left:auto;display:flex;gap:8px}.pill{border:1px solid #ffffff45;background:#ffffff16;color:white;border-radius:30px;padding:9px 13px;font-weight:650}
+.tabs{display:flex;gap:9px;overflow:auto;margin-top:17px;padding-bottom:2px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{white-space:nowrap;border:1px solid #ffffff28;color:#e7fffb;background:#ffffff12;border-radius:28px;padding:10px 15px;font-weight:650}.tab.active{background:white;color:var(--deep)}
+main{max-width:1050px;margin:0 auto;padding:22px 18px 100px}.welcome{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px}.welcome h2{margin:0;font-size:23px}.welcome p{margin:4px 0 0;color:var(--muted);font-size:13px}.date{font-size:12px;color:var(--muted);background:white;border:1px solid var(--line);padding:9px 12px;border-radius:13px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.stat,.card{background:white;border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:var(--shadow)}.stat small{color:var(--muted)}.stat strong{display:block;font-size:27px;margin-top:5px}.stat .emoji{float:right;font-size:22px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:25px 0 12px}.section-head h3{margin:0;font-size:17px}.muted{color:var(--muted);font-size:13px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card h3{margin:0 0 7px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}.card-icon{width:42px;height:42px;border-radius:13px;background:var(--mint);display:grid;place-items:center;font-size:21px;margin-bottom:12px}
+.primary{border:0;background:var(--green);color:white;padding:10px 15px;border-radius:12px;font-weight:700}.secondary{border:1px solid var(--line);background:white;color:var(--ink);padding:9px 13px;border-radius:12px;font-weight:650}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.list{display:grid;gap:10px}.item{border:1px solid var(--line);border-radius:14px;padding:13px;background:#fff;display:flex;justify-content:space-between;gap:12px;align-items:center}.item b{font-size:14px}.item small{display:block;color:var(--muted);margin-top:3px}.tag{font-size:11px;background:var(--mint);color:var(--deep);padding:5px 9px;border-radius:20px;white-space:nowrap}
+form{display:grid;gap:11px;margin-top:12px}.field label{display:block;font-size:13px;font-weight:650;margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:12px 13px;border:1px solid #dce7e5;border-radius:12px;background:#fbfdfd;color:var(--ink);outline:none}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green)}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed #cddbd8;border-radius:15px;background:#fbfdfd}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:6;padding:8px 5px calc(8px + env(safe-area-inset-bottom))}
+.bottom-inner{width:min(700px,100%);display:flex;justify-content:space-around}.navbtn{border:0;background:none;color:#738985;display:grid;gap:3px;justify-items:center;font-size:10px;padding:5px 8px}.navbtn span{font-size:21px}.navbtn.active{color:var(--green);font-weight:750}
+.hidden{display:none!important}.progress{height:8px;background:#e8f0ee;border-radius:20px;overflow:hidden;margin-top:10px}.progress i{display:block;height:100%;background:var(--green);border-radius:20px}.note{font-size:12px;color:var(--muted);line-height:1.5;margin-top:14px}
+@media(max-width:650px){.grid{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.welcome h2{font-size:20px}.date{display:none}main{padding:17px 13px 95px}.top{padding-left:14px;padding-right:14px}.brand h1{font-size:18px}.stat{padding:14px}.stat strong{font-size:24px}.formgrid{grid-template-columns:1fr}}
+@media(min-width:900px){.cards{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="brand"><div class="logo">🎓</div><div><h1>Career & Skill Hub</h1><p id="tagline">ক্যারিয়ার, পড়াশোনা ও দক্ষতার এক জায়গা</p></div>
+ <div class="top-actions"><button class="pill" id="langBtn">🌐 English</button></div></div>
+ <div class="tabs" id="tabs"></div>
+</header>
+<main id="app"></main>
+<nav class="bottom"><div class="bottom-inner" id="bottomNav"></div></nav>
+<script>
+const sections=[
+ ['home','⌂','হোম','Home'],['jobs','💼','জব ট্র্যাকার','Job Tracker'],['study','📖','স্টাডি প্ল্যানার','Study Planner'],
+ ['skills','⚡','স্কিল ট্র্যাকার','Skill Tracker'],['interview','☑','ইন্টারভিউ নোটস','Interview Notes'],
+ ['daily','▣','ডেইলি প্ল্যানার','Daily Planner'],['expense','৳','খরচের হিসাব','Expenses'],
+ ['cv','🗂','CV ও পোর্টফোলিও','CV & Portfolio'],['assistant','✦','AI স্টাডি সহায়ক','AI Study Assistant']
+];
+const copy={
+ bn:{tag:'ক্যারিয়ার, পড়াশোনা ও দক্ষতার এক জায়গা',hello:'স্বাগতম!',sub:'আজকের লক্ষ্য ঠিক করো, প্রতিদিন একটু এগিয়ে যাও।',apps:'তোমার ওয়ার্কস্পেস',recent:'সাম্প্রতিক কার্যক্রম',jobs:'জব ট্র্যাকার',study:'স্টাডি প্ল্যানার',skills:'স্কিল ট্র্যাকার',interview:'ইন্টারভিউ নোটস',daily:'ডেইলি প্ল্যানার',expense:'খরচের হিসাব',cv:'CV ও পোর্টফোলিও',assistant:'AI স্টাডি সহায়ক',add:'নতুন যোগ করো',save:'সংরক্ষণ',cancel:'বাতিল',role:'পদের নাম',company:'প্রতিষ্ঠান',date:'তারিখ',status:'অবস্থা',topic:'বিষয় / টপিক',hours:'সময় (ঘণ্টা)',skill:'দক্ষতার নাম',level:'অগ্রগতি (%)',question:'প্রশ্ন',answer:'উত্তর / নোট',task:'কাজের নাম',amount:'টাকার পরিমাণ',type:'ধরন',income:'আয়',expenseType:'ব্যয়',name:'নাম',email:'ইমেইল',phone:'ফোন',summary:'নিজের সম্পর্কে / সারাংশ',empty:'এখনো কিছু যোগ করা হয়নি।',delete:'মুছুন',applied:'আবেদন করা হয়েছে',interviewStatus:'ইন্টারভিউ',selected:'নির্বাচিত',rejected:'বাতিল',planned:'পরিকল্পিত',done:'সম্পন্ন',inprogress:'চলমান',dashboard:'ড্যাশবোর্ড',totalJobs:'মোট আবেদন',tasks:'আজকের কাজ',skillsCount:'শেখা স্কিল',balance:'বর্তমান ব্যালেন্স',assistantText:'এই অংশে প্রশ্ন লিখে নিজের পড়াশোনার নোট সাজাতে পারো। AI উত্তর পেতে AI-সুবিধাযুক্ত সংস্করণের সংযোগ প্রয়োজন।',prompt:'যেমন: ট্রান্সফরমারের প্যারালাল অপারেশনের শর্তগুলো বুঝিয়ে দাও',ask:'নোট তৈরি করো',quick:'দ্রুত যোগ',noData:'তথ্য পাওয়া যায়নি'},
+ en:{tag:'Your space for career, learning & growth',hello:'Welcome!',sub:'Set a goal for today and make progress every day.',apps:'Your workspace',recent:'Recent activity',jobs:'Job Tracker',study:'Study Planner',skills:'Skill Tracker',interview:'Interview Notes',daily:'Daily Planner',expense:'Expense Tracker',cv:'CV & Portfolio',assistant:'AI Study Assistant',add:'Add new',save:'Save',cancel:'Cancel',role:'Job role',company:'Company',date:'Date',status:'Status',topic:'Subject / Topic',hours:'Time (hours)',skill:'Skill name',level:'Progress (%)',question:'Question',answer:'Answer / Notes',task:'Task name',amount:'Amount',type:'Type',income:'Income',expenseType:'Expense',name:'Name',email:'Email',phone:'Phone',summary:'About you / Summary',empty:'Nothing added yet.',delete:'Delete',applied:'Applied',interviewStatus:'Interview',selected:'Selected',rejected:'Rejected',planned:'Planned',done:'Completed',inprogress:'In progress',dashboard:'Dashboard',totalJobs:'Total applications',tasks:'Today’s tasks',skillsCount:'Skills tracked',balance:'Current balance',assistantText:'Write a question here and organize your study notes. Connecting an AI-enabled service is required for live AI answers.',prompt:'e.g. Explain the conditions for parallel operation of transformers',ask:'Save note',quick:'Quick add',noData:'No data found'}
+};
+let lang='bn',page='home';
+const keys=['jobs','study','skills','interview','daily','expenses'];
+let db=JSON.parse(localStorage.getItem('csh_data')||'{}');keys.forEach(k=>db[k]??=[]);db.profile??={};
+const t=k=>copy[lang][k]||k;
+const save=()=>localStorage.setItem('csh_data',JSON.stringify(db));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function renderNav(){
+ document.getElementById('tagline').textContent=t('tag');
+ document.getElementById('langBtn').textContent=lang==='bn'?'🌐 English':'🌐 বাংলা';
+ document.getElementById('tabs').innerHTML=sections.slice(1).map(s=>`<button class="tab ${page===s[0]?'active':''}" data-page="${s[0]}">${s[1]} ${lang==='bn'?s[2]:s[3]}</button>`).join('');
+ document.getElementById('bottomNav').innerHTML=sections.slice(0,5).map(s=>`<button class="navbtn ${page===s[0]?'active':''}" data-page="${s[0]}"><span>${s[1]}</span>${lang==='bn'?s[2]:s[3]}</button>`).join('')+`<button class="navbtn" data-page="more"><span>•••</span>${lang==='bn'?'আরও':'More'}</button>`;
+ document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>{page=b.dataset.page==='more'?'assistant':b.dataset.page;render()});
+}
+function stats(){return `<div class="grid">
+ <div class="stat"><span class="emoji">💼</span><small>${t('totalJobs')}</small><strong>${db.jobs.length}</strong></div>
+ <div class="stat"><span class="emoji">📌</span><small>${t('tasks')}</small><strong>${db.daily.filter(x=>x.status==='done').length}/${db.daily.length}</strong></div>
+ <div class="stat"><span class="emoji">⚡</span><small>${t('skillsCount')}</small><strong>${db.skills.length}</strong></div>
+ <div class="stat"><span class="emoji">৳</span><small>${t('balance')}</small><strong>${money(balance())}</strong></div></div>`}
+function money(n){return '৳'+Number(n||0).toLocaleString('en-BD')}
+function balance(){return db.expenses.reduce((a,x)=>a+(x.type==='income'?Number(x.amount):-Number(x.amount)),0)}
+function home(){return `<div class="welcome"><div><h2>${t('hello')}</h2><p>${t('sub')}</p></div><div class="date">${new Date().toLocaleDateString(lang==='bn'?'bn-BD':'en-US',{day:'numeric',month:'short',year:'numeric'})}</div></div>${stats()}<div class="section-head"><h3>${t('apps')}</h3><span class="muted">${t('quick')}</span></div><div class="cards">${sections.slice(1).map(s=>`<button class="card" style="text-align:left;border:1px solid var(--line)" data-page="${s[0]}"><div class="card-icon">${s[1]}</div><h3>${lang==='bn'?s[2]:s[3]}</h3><p>${descriptions[s[0]][lang]}</p></button>`).join('')}</div><div class="section-head"><h3>${t('recent')}</h3></div>${recent()}`}
+const descriptions={jobs:{bn:'চাকরির আবেদন, তারিখ ও অগ্রগতি',en:'Track applications, dates and status'},study:{bn:'বিষয়ভিত্তিক পড়ার পরিকল্পনা',en:'Plan your study by topic'},skills:{bn:'নতুন দক্ষতা ও শেখার অগ্রগতি',en:'Track skills and learning progress'},interview:{bn:'ভাইভার প্রশ্ন ও উত্তর জমা রাখো',en:'Save interview questions and answers'},daily:{bn:'প্রতিদিনের কাজ গুছিয়ে রাখো',en:'Organize your daily tasks'},expense:{bn:'আয়-ব্যয়ের হিসাব রাখো',en:'Record income and expenses'},cv:{bn:'নিজের পেশাগত তথ্য সাজাও',en:'Organize your professional profile'},assistant:{bn:'পড়াশোনার প্রশ্ন ও নোট সাজাও',en:'Organize study questions and notes'}};
+function recent(){let all=[...db.jobs.map(x=>({...x,kind:'jobs'})),...db.skills.map(x=>({...x,kind:'skills'})),...db.daily.map(x=>({...x,kind:'daily'}))].slice(-4).reverse();return all.length?`<div class="list">${all.map(x=>`<div class="item"><div><b>${esc(x.title||x.role||x.skill)}</b><small>${esc(x.date||'')}</small></div><span class="tag">${t(x.status||'planned')}</span></div>`).join('')}</div>`:`<div class="empty">${t('empty')}</div>`}
+const configs={
+ jobs:{fields:[['role','text'],['company','text'],['date','date'],['status','statusJob']],key:'jobs',title:'role'},
+ study:{fields:[['topic','text'],['date','date'],['hours','number']],key:'study',title:'topic'},
+ skills:{fields:[['skill','text'],['level','number']],key:'skills',title:'skill'},
+ interview:{fields:[['question','text'],['answer','textarea']],key:'interview',title:'question'},
+ daily:{fields:[['task','text'],['date','date'],['status','statusTask']],key:'daily',title:'task'},
+ expense:{fields:[['type','typeMoney'],['amount','number'],['topic','text'],['date','date']],key:'expenses',title:'topic'}
+};
+function field(name,type){let label=t(name);if(type==='textarea')return `<div class="field"><label>${label}</label><textarea name="${name}" required></textarea></div>`;
+ if(type==='statusJob')return `<div class="field"><label>${t('status')}</label><select name="status"><option value="applied">${t('applied')}</option><option value="interview">${t('interviewStatus')}</option><option value="selected">${t('selected')}</option><option value="rejected">${t('rejected')}</option></select></div>`;
+ if(type==='statusTask')return `<div class="field"><label>${t('status')}</label><select name="status"><option value="planned">${t('planned')}</option><option value="inprogress">${t('inprogress')}</option><option value="done">${t('done')}</option></select></div>`;
+ if(type==='typeMoney')return `<div class="field"><label>${t('type')}</label><select name="type"><option value="income">${t('income')}</option><option value="expense">${t('expenseType')}</option></select></div>`;
+ return `<div class="field"><label>${label}</label><input name="${name}" type="${type}" ${type==='number'?'min="0"':''} required></div>`}
+function records(key){let a=db[key]||[];if(!a.length)return `<div class="empty">${t('empty')}</div>`;return `<div class="list">${a.map((x,i)=>`<div class="item"><div><b>${esc(x.title||x.role||x.topic||x.skill||x.question||x.task)}</b><small>${esc(x.company||x.date||x.answer||'')}</small>${x.level!==undefined?`<div class="progress"><i style="width:${Math.min(100,Math.max(0,x.level))}%"></i></div>`:''}</div><div class="row"><span class="tag">${esc(t(x.status||x.type||''))}</span><button class="secondary" data-del="${key}:${i}">×</button></div></div>`).join('')}</div>`}
+function section(p){let c=configs[p];if(!c)return '';let key=c.key;return `<div class="welcome"><div><h2>${t(p)}</h2><p>${descriptions[p][lang]}</p></div></div><div class="card"><h3>${t('add')}</h3><form id="entryForm">${c.fields.map(f=>field(...f)).join('')}<button class="primary" type="submit">${t('save')}</button></form></div><div class="section-head"><h3>${t('recent')}</h3><span class="muted">${db[key].length}</span></div>${records(key)}`}
+function cv(){let p=db.profile;return `<div class="welcome"><div><h2>${t('cv')}</h2><p>${descriptions.cv[lang]}</p></div></div><div class="card"><form id="profileForm"><div class="field"><label>${t('name')}</label><input name="name" value="${esc(p.name)}"></div><div class="formgrid"><div class="field"><label>${t('email')}</label><input name="email" type="email" value="${esc(p.email)}"></div><div class="field"><label>${t('phone')}</label><input name="phone" value="${esc(p.phone)}"></div></div><div class="field"><label>${t('summary')}</label><textarea name="summary">${esc(p.summary)}</textarea></div><button class="primary">${t('save')}</button></form></div><p class="note">${lang==='bn'?'তোমার তথ্য এই ডিভাইসের ব্রাউজারে সংরক্ষিত থাকবে। CV PDF export সুবিধা পরবর্তী সংস্করণে যোগ করা যাবে।':'Your information is saved in this device browser. CV PDF export can be added in a future version.'}</p>`}
+function assistant(){return `<div class="welcome"><div><h2>${t('assistant')}</h2><p>${descriptions.assistant[lang]}</p></div></div><div class="card"><div class="card-icon">✦</div><h3>${lang==='bn'?'পড়াশোনার প্রশ্ন / নোট':'Study question / note'}</h3><p>${t('assistantText')}</p><form id="assistantForm"><div class="field"><textarea name="question" placeholder="${t('prompt')}" required></textarea></div><button class="primary">${t('ask')}</button></form></div><div class="section-head"><h3>${lang==='bn'?'সংরক্ষিত নোট':'Saved notes'}</h3></div>${records('interview')}`}
+function render(){renderNav();let app=document.getElementById('app');app.innerHTML=page==='home'?home():page==='cv'?cv():page==='assistant'?assistant():section(page);
+ document.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{let [k,i]=b.dataset.del.split(':');db[k].splice(+i,1);save();render()});
+ let f=document.getElementById('entryForm');if(f)f.onsubmit=e=>{e.preventDefault();let d=Object.fromEntries(new FormData(f));let c=configs[page];if(d.role)d.title=d.role;if(d.skill)d.title=d.skill;if(d.topic)d.title=d.topic;if(d.question)d.title=d.question;if(d.task)d.title=d.task;db[c.key].push(d);save();render()};
+ let pf=document.getElementById('profileForm');if(pf)pf.onsubmit=e=>{e.preventDefault();db.profile=Object.fromEntries(new FormData(pf));save();alert(lang==='bn'?'তথ্য সংরক্ষিত হয়েছে':'Profile saved')};
+ let af=document.getElementById('assistantForm');if(af)af.onsubmit=e=>{e.preventDefault();db.interview.push({question:new FormData(af).get('question'),answer:'',title:new FormData(af).get('question')});save();render()};
+}
+document.getElementById('langBtn').onclick=()=>{lang=lang==='bn'?'en':'bn';render()};
+render();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
